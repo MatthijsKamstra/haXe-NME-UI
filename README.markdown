@@ -6,6 +6,29 @@ Skinnable UI Components for haXe NME
 
 (more info later)
 
+I use minimalcomps a lot in my AS3 prototyping, so I wanted to use it for haXe also.
+Luckely someone did already the heavy lifting (Slaskis).
+There are some changes made to the original haXe translation because it didn't work on Android.
+
+
+
+Components
+-------------------------
+For my project I didn't need all components.
+So I created a small (mobile) subset.
+
+- CheckBox
+- InputText
+- Label
+- PushButton
+- RadioButton
+
+and for easy positioning
+
+- VBox
+- HBox
+
+
 Sources
 -------------------------
 
