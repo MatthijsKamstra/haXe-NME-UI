@@ -73,7 +73,7 @@ class Component implements IEventDispatcher
 
 	// [mck] extra getter/setter for pushbutton
 	public var name(get_name, set_name):String;
-	
+
 	// Composition instead of inheritence because of haxe getter/setter handicap
 	var _comp:Sprite;
 	var _width:Float;
@@ -81,6 +81,7 @@ class Component implements IEventDispatcher
 	var _tag:Int;
 	var _enabled:Bool;
 	var _parent:Dynamic;
+	var _clazz:Dynamic;
 	
 	public static var DRAW:String = "draw";
 
@@ -532,6 +533,7 @@ class Component implements IEventDispatcher
 		return _comp.name = value;
 	}
 
+	
 	public var addUpAsset(get_addUpAsset, set_addUpAsset):BitmapData;
 	private var _addUpAsset:BitmapData;
 	
