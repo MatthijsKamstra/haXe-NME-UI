@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="NME ui" package="nl.emceekay.ui" version="1.0.0" company="eMCeeKay aka [mck]" />
+	
+	<app main="UIMain" file="UIMain" path="Export" />
+	
+	<!-- size of android is 320x480 --> 
+	<window width="600" height="480" unless="mobile" />
+	<window orientation="landscape" if="mobile" />
+	<!--<window width="480" height="800" unless="mobile" />
+	<window orientation="portrait" if="mobile" />-->
+	
+	<window fps="60" />
+	
+	<source path="Source" />
+	
+	
+	<!-- If you are using NME 3.1.1, and not NME 3.2 from SVN, uncomment and try the tags below -->
+	
+	<!-- <app title="Project" main="Project" file="Project" package="com.template.project" version="1.0.0" company="Example, Inc." />
+	
+	<set name="BUILD_DIR" value="Export" />
+	
+	<set name="mobile" if="android" />
+	<set name="mobile" if="webos" />
+	<set name="mobile" if="ios" />
+	
+	<window width="800" height="600" unless="mobile" />
+	<window width="0" height="0" if="mobile" />
+	<window fps="30" />
+	
+	<classpath name="Source" /> -->
+	
+	
+	<haxelib name="nme" />
+	
+	<assets path="Assets" rename="assets" include="*" exclude="nme.svg" />
+	
+	<icon path="Assets/nme.svg" />
+	
+	<ndll name="std" />
+	<ndll name="regexp" />
+	<ndll name="zlib" />
+	<ndll name="nme" haxelib="nme" />
+	
+</project>
